@@ -7,8 +7,8 @@ const { userName } = Qs.parse(location.search, {
 });
 
 // Message from server
+
 socket.on("message", (message) => {
-  console.log(message);
   outputMessage(message);
 });
 
